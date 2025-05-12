@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - My Website{% endblock %}
+{% block header %}About Our Company{% endblock %}
+
+{% block content %}
+<div class="about-container">
+    <!-- Hero Banner -->
+    <section class="about-hero">
+        <div class="hero-content">
+            <h1>Our Story</h1>
+            <p class="subtitle">Discover what makes us unique</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="mission-content">
+            <h2>Our Mission</h2>
+            <p>We are dedicated to delivering exceptional value to our customers through innovative solutions and outstanding service. Our mission is to bridge the gap between technology and business needs, creating lasting partnerships with our clients.</p>
+            <div class="mission-stats">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Customer Support</span>
+                </div>
+            </div>
+        </div>
+        <div class="mission-image">
+            <img src="{{ url_for('static', filename='20.jpg') }}" alt="Our team working">
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <p class="section-intro">We're a diverse group of professionals united by our passion for excellence.</p>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='18.avif') }}" alt="John Doe">
+                </div>
+                <h3>John Doe</h3>
+                <p class="position">Founder & CEO</p>
+                <p class="bio">With over 15 years of industry experience, John leads our company with vision and dedication.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='17.jpg') }}" alt="Jane Smith">
+                </div>
+                <h3>Jane Smith</h3>
+                <p class="position">Creative Director</p>
+                <p class="bio">Jane's innovative designs have won multiple awards and delighted our clients.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <!-- Add more team members as needed -->
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <h2>Our Core Values</h2>
+        
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Innovation</h3>
+                <p>We constantly push boundaries to find better solutions for our clients.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Integrity</h3>
+                <p>We believe in doing business with honesty and transparency.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Collaboration</h3>
+                <p>Great things happen when we work together with our clients and team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Timeline -->
+    <section class="timeline-section">
+        <h2>Our Journey</h2>
+        
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="event-date">2010</div>
+                <div class="event-content">
+                    <h3>Company Founded</h3>
+                    <p>Started in a small office with just three team members and big dreams.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="event-date">2014</div>
+                <div class="event-content">
+                    <h3>First Major Client</h3>
+                    <p>Landed our first Fortune 500 client, marking a turning point for the company.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="event-date">2020</div>
+                <div class="event-content">
+                    <h3>Global Expansion</h3>
+                    <p>Opened our first international office in London to serve European clients.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="event-date">Present</div>
+                <div class="event-content">
+                    <h3>Continuing Growth</h3>
+                    <p>Now serving clients in 15 countries with a team of 50+ professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="about-cta">
+        <h2>Ready to Work With Us?</h2>
+        <p>Get in touch to discuss how we can help with your next project.</p>
+        <a href="{{ url_for('contact') }}" class="cta-button">Contact Us</a>
+    </section>
+</div>
+{% endblock %}

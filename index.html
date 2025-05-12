@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}Home - My Website{% endblock %}
+{% block header %}{% endblock %}
+
+{% block content %}
+<!-- Simple Hero Section -->
+<div class="simple-hero">
+    <div class="hero-text">
+        <h1>Welcome to My Website</h1>
+        <p>A simple, elegant solution for your needs</p>
+        <a href="{{ url_for('about') }}" class="hero-button">Learn More</a>
+    </div>
+</div>
+
+<!-- Basic Content Section -->
+<div class="content-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <div class="service">
+            <h3>AKZM Car Graphic Design</h3>
+            <p>Custom Color-Changing Wraps (Chameleon & Flip Colors)
+
+Paint Protection Film (PPF) Installation
+
+Decal Design for Motorsports & Drift Events
+
+Reflective & Glow-in-the-Dark Vinyl Graphics
+
+Custom Rim, Brake Caliper, and Roof Wrap Design
+
+Logo & Badge Redesign for Vehicles
+
+Window Tinting and Styling
+
+Digital Rendering & Mockups Before Application
+        </div>
+        <div class="service">
+            <h3> AKZM Interior Design</h3>
+            <p>Yacht & Private Jet Interior Conceptualization
+Modular lightning desighn
+
+Themed Interior Makeovers (Minimalist, Retro, Futuristic, etc.)
+
+Interior Renovation for Classic or Vintage Cars
+
+Material Sourcing & Custom Upholstery Production
+
+Home Theater and Gaming Room Design
+        </div>
+        <div class="service">
+            <h3> AKZM Manufacturing </h3>
+            <p>Custom Alloy Wheel Manufacturing
+
+Carbon Fiber Part Fabrication
+
+Limited Edition Body Kit Production
+
+Prototype-to-Product Service for Inventors
+
+Laser Cutting and Engraving Services
+
+Interior Trim & Dashboard Panel Production
+
+Eco-friendly Material Manufacturing Options
+
+Quality Control & Product Testing Services</p>
+        </div>
+    </div>
+</div>
+
+<!-- Image Showcase -->
+<div class="image-showcase">
+    <img src="{{ url_for('static', filename='21.webp') }}" alt="Showcase Image 1">
+    <img src="{{ url_for('static', filename='22.jpg') }}" alt="Showcase Image 2">
+</div>
+
+<!-- Call to Action -->
+<div class="cta-section">
+    <h2>Ready to get started?</h2>
+    <a href="{{ url_for('contact') }}" class="cta-button">Contact Us</a>
+</div>
+{% endblock %}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends "base.html" %}
+    <title>Services - My Website</title>
+</head>
+<body>
+    {% block content %}
+    <h1>Our Services</h1>
+    <ul>
+        <li> AKZM Car Graphic Design</li>
+        <li> AKZM Interior Design (Automotive & Spaces)</li>
+        <li> AKZM Manufacturing</li>
+    </ul>
+</body>
+</html>
+
+<div class="service-gallery">
+    <div class="service">
+        <img src="{{ url_for('static', filename='mercdes.avif') }}" alt="mercdes development">
+        <h3> The Signature Mercedes AKZM Edition</h3>
+    </div>
+    
+    <div class="service">
+        <img src="{{ url_for('static', filename='bmw.avif') }}"  alt="we make best BMW deisghn">
+        <h3>The BMW Redefinition by AKZM</h3>
+    </div>
+    
+    <div class="service">
+        <img src="{{ url_for('static', filename='rolls.jpg') }}"  alt="SEO Services">
+        <h3>The Rolls-Royce Bespoke Design by AKZM</h3>
+    </div>
+</div>
+
+
+
+<div class="services-container">
+    <h1>Our Services</h1>
+    
+    <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='corvet.webp') }}" alt="car desighned by AKZM">
+            <div class="service-info">
+                <h3>AKZM Car Graphic Design</h3>
+                <p>We create responsive, modern Car tailored to your business needs using the latest technologies.</p>
+                <ul class="service-features">
+                    <li>Custom Car design</li>
+                    <li>Custom vinyl wraps and decals</li>
+                    <li>Sporty, luxury, and aesthetic graphic packages</li>
+                     <li>3D rendering of exterior designs</li>
+                      <li>Matte, chrome, and specialty finish design consulting</li>
+                </ul>
+                <a href="/contact" class="service-button">Get Started</a>
+            </div>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='12.jpg') }}" alt="Graphic Design">
+            <div class="service-info">
+                <h3>AKZM Interior Design (Automotive & Spaces)</h3>
+                <p>Professional design services for branding, marketing materials, and digital assets.</p>
+                <ul class="service-features">
+                    <li>Car interior customization (seats, dashboards, lighting)</li>
+                    <li>Premium leather/fabric design and fitting</li>
+                    <li>Ambient lighting and audio layout design</li>
+                    <li>Home and office interior design services</li>
+                    <li>Space planning, 3D visualization, and mood boards</li>
+                </ul>
+                <a href="/contact" class="service-button">Request Quote</a>
+                    </div>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='4.jpeg') }}"4 alt="SEO Services">
+            <div class="service-info">
+                <h3> AKZM Manufacturing</h3>
+                <p>Improve your search engine rankings and increase organic traffic to your website.</p>
+                <ul class="service-features">
+                    <li>Custom automotive parts manufacturing</li>
+                    <li>Prototype development for auto accessories</li>
+                    <li>CNC machining and 3D printing services</li>
+                    <li>Fabrication of interior decor pieces</li>
+                    <li>OEM part manufacturing partnerships</li>
+                </ul>
+                <a href="/contact" class="service-button">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="service-features-section">
+    <h2>Why Choose Our Services?</h2>
+
+    At AKZM, we blend creativity, precision, and innovation to offer world-class solutions in car graphic design, interior design, and custom manufacturing. Whether you want to upgrade your vehicle’s style, enhance your space, or bring your product ideas to life—we deliver with passion and precision.
+</p>
+    <div class="features-container">
+        <div class="feature">
+            <div class="feature-icon">
+                <img src="{{ url_for('static', filename='13.jpeg') }}" alt="Quality Icon">
+            </div>
+            <h3>Premium Quality</h3>
+            <p>We use only the highest quality tools and follow industry best practices to deliver exceptional results. We don’t compromise—every design, every product, every service is crafted with excellence. From luxury materials in car interiors to high-grade wraps and cutting-edge manufacturing techniques, we ensure top-tier craftsmanship that meets both aesthetic and functional standards.
+
+</p>
+        </div>
+        
+        <div class="feature">
+            <div class="feature-icon">
+                <img src="{{ url_for('static', filename='15.jpeg') }}" alt="Support Icon">
+            </div>
+            <h3>24/7 Support</h3>
+            <p>Your satisfaction is our priority, anytime, every time. Our dedicated support team is available 24/7 to handle your inquiries, offer design consultations, provide updates on your projects, or assist with any urgent needs—even after delivery.</p>
+        </div>
+        
+        <div class="feature">
+            <div class="feature-icon">
+                <img src="{{ url_for('static', filename='16.webp') }}" alt="Guarantee Icon">
+            </div>
+            <h3>Satisfaction Guarantee</h3>
+            <p>We're so confident in our services that we offer a 100% satisfaction guarantee. We’re not happy unless you’re thrilled. That’s why AKZM offers a 100% Satisfaction Guarantee. If something doesn’t meet your expectations, we’ll work closely with you until it does—revisions, fixes, or even replacements, because your trust is our success.
+
+</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
